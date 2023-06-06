@@ -1,4 +1,7 @@
-theme: osuny-hugo-theme-aaa
+theme: noesya-hugo-theme
 paginate: 18
 enableRobotsTXT: true
 removePathAccents: true
+
+params:
+  ecosystem: Réseau
