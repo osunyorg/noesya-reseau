@@ -1,7 +1,8 @@
 ---
-title: >
-  Noesya
+title: "Noesya"
 breadcrumb_title: "Noesya"
+breadcrumbs:
+  - title: "Noesya"
 url: "/"
 
 full_width: true
@@ -18,9 +19,9 @@ translation_key: communication-website-page-f23f4204-4713-4f50-b7cf-c74f4804582f
 bodyclass: 
 
 children:
-  - /actualites/
-  - /equipe/
-  - /organisations/
+  - "content/fr/posts/_index.html"
+  - "content/fr/persons/_index.html"
+  - "content/fr/organizations/_index.html"
 meta_description: >
   
 description: >
@@ -66,7 +67,7 @@ contents:
     position: 0
     level: 2
   - kind: block
-    template: people
+    template: persons
     title: >-
       
     position: 2
@@ -78,18 +79,10 @@ contents:
       with_photo: true
       persons:
         - slug: "esteban-almiron"
+          external: false
           role: >-
             Tech
 
-      elements:
-        - title: >-
-            Esteban Almiron
-          summary: >-
-            Tech
-          kind: "osuny"
-          slug: "esteban-almiron"
-          url: "/equipe/esteban-almiron/"
-          picture: "0e5f41dc-4c57-4217-95dd-2fa2835f36ee"
 
 
 
@@ -111,17 +104,7 @@ contents:
       with_link: false
       organizations:
         - slug: "yz-paris"
-      elements:
-        - title: >-
-            
-          kind: "osuny"
-          slug: "yz-paris"
-          url: "/organisations/yz-paris/"
-          logo:
-            light_background:
-              id: "0b981de8-da4d-4d60-9e72-c917b1108c09"
-            dark_background:
-              id: "4cefb342-578a-41a7-9b96-3d026a5ab4f3"
+          external: false
 
 
 
