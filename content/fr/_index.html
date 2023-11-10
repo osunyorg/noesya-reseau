@@ -44,7 +44,8 @@ contents:
     title: >-
       
     position: 1
-    heading_level: 2
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -66,13 +67,15 @@ contents:
     title: >-
       Personnes
     position: 0
-    level: 2
+    rank: 2
   - kind: block
     template: persons
     title: >-
       
     position: 2
-    heading_level: 3
+    ranks:
+      self: false
+      children: 3
     data:
       description: >-
         
@@ -92,13 +95,15 @@ contents:
     title: >-
       Organisations
     position: 1
-    level: 2
+    rank: 2
   - kind: block
     template: organizations
     title: >-
       
     position: 3
-    heading_level: 3
+    ranks:
+      self: false
+      children: 3
     data:
       layout: grid
       description: >-
