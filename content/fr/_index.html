@@ -56,6 +56,8 @@ contents:
     template: chapter
     title: >-
       
+    slug: >-
+      
     ranks:
       self: false
     data:
@@ -75,15 +77,23 @@ contents:
 
 
 
-  - kind: heading
+  - kind: block
+    template: title
     title: >-
       Personnes
-    slug: "personnes"
-    position: 1
-    rank: 2
+    slug: >-
+      personnes
+    ranks:
+      self: 2
+    data:
+      layout: classic
+
+
   - kind: block
     template: persons
     title: >-
+      
+    slug: >-
       
     ranks:
       self: false
@@ -104,16 +114,23 @@ contents:
 
 
 
-
-  - kind: heading
+  - kind: block
+    template: title
     title: >-
       Organisations
-    slug: "organisations"
-    position: 2
-    rank: 2
+    slug: >-
+      organisations
+    ranks:
+      self: 2
+    data:
+      layout: classic
+
+
   - kind: block
     template: organizations
     title: >-
+      
+    slug: >-
       
     ranks:
       self: false
@@ -130,7 +147,6 @@ contents:
 
       organizations:
         - slug: "yz-paris"
-
 
 
 
