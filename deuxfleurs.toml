@@ -14,3 +14,15 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 [headers.values]
 Cache-Control = "max-age=31536000, no-transform, public"
 
+[[redirects]]
+from = "/equipe/equipe-editoriale/index.html"
+to = "/personnes/equipe-editoriale/"
+
+[[redirects]]
+from = "/equipe/esteban-almiron/index.html"
+to = "/personnes/esteban-almiron/"
+
+[[redirects]]
+from = "/equipe/index.html"
+to = "/personnes/"
+

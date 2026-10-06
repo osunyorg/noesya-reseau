@@ -1,40 +1,49 @@
 ---
 title: Menu principal
 items:
-- title: Actualités
-  slug: actualites
-  target: "/actualites/"
+- title: Recherche
+  slug: recherche
+  target: "/recherche/"
   kind: page
   new_tab: false
   children: []
   descendants_targets: []
-  path: "/posts"
-  file: content/fr/posts/_index.html
-- title: Équipe
-  slug: equipe
-  target: "/equipe/"
+  path: "/pages/recherche"
+  file: content/fr/pages/recherche/_index.html
+- title: Stratégie
+  slug: strategie
+  target: "/strategie/"
   kind: page
   new_tab: false
   children: []
   descendants_targets: []
-  path: "/persons"
-  file: content/fr/persons/_index.html
-- title: Organisations
-  slug: organisations
-  target: "/organisations/"
+  path: "/pages/strategie"
+  file: content/fr/pages/strategie/_index.html
+- title: Design
+  slug: design
+  target: "/design/"
   kind: page
   new_tab: false
   children: []
   descendants_targets: []
-  path: "/organizations"
-  file: content/fr/organizations/_index.html
-- title: Fichiers
-  slug: fichiers
-  target: "/fichiers/"
+  path: "/pages/design"
+  file: content/fr/pages/design/_index.html
+- title: Tech
+  slug: tech
+  target: "/tech/"
   kind: page
   new_tab: false
   children: []
   descendants_targets: []
-  path: "/files"
-  file: content/fr/files/_index.html
+  path: "/pages/tech"
+  file: content/fr/pages/tech/_index.html
+- title: Éthique
+  slug: ethique
+  target: "/ethique/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/pages/ethique"
+  file: content/fr/pages/ethique/_index.html
 
