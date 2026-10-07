@@ -26,3 +26,7 @@ to = "/personnes/esteban-almiron/"
 from = "/equipe/index.html"
 to = "/personnes/"
 
+[[redirects]]
+from = "/organisations/laboratoire-cemti/index.html"
+to = "/organisations/cemti/"
+
