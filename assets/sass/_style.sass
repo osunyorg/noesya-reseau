@@ -17,3 +17,44 @@
                 img
                     height: 290px
                     width: auto
+
+// organizations
+.organizations
+    .organization
+        .media--logo
+            picture
+                align-items: center
+                display: flex !important
+                justify-content: center
+            img
+                filter: grayscale(1)
+                max-height: pxToRem(130)
+                max-width: pxToRem(160)
+                mix-blend-mode: multiply
+                transition: filter $color-duration ease
+        &:hover
+            img
+                filter: grayscale(0)
+    &,
+    &:not(.with-summaries) 
+        .organization 
+            .organization-title
+                @include h4
+                font-family: $body-font-family
+
+    @include media-breakpoint-up(md)
+        &--grid
+            row-gap: $spacing-5 !important
+
+    @include media-breakpoint-down(md)
+        grid-template-columns: repeat(1, 1fr)
+        .organization
+            flex-direction: row
+            gap: var(--grid-gutter)
+            &-content
+                flex: 2
+            .media
+                flex: 0.5
+                &--logo
+                    img
+                        max-height: pxToRem(40)
