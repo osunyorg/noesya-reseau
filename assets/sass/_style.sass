@@ -5,6 +5,12 @@
             position: absolute
             right: 0
 
+    .block-pages
+        .page
+            &-title
+                @include link
+                font-family: $body-font-family
+
     @include media-breakpoint-up(md)
         .hero
             figure
