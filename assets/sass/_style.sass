@@ -1,0 +1,19 @@
+.page__home
+    .hero
+        position: relative
+        figure
+            position: absolute
+            right: 0
+
+    @include media-breakpoint-up(md)
+        .hero
+            figure
+                width: 326px
+
+    @include media-breakpoint-down(md)
+        .hero
+            figure
+                bottom: 0
+                img
+                    height: 290px
+                    width: auto
