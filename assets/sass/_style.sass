@@ -68,6 +68,11 @@
                     img
                         max-height: pxToRem(40)
 
+.block-organizations--grid
+    @include in-page-without-sidebar
+        .organizations
+            @include grid(4)
+
 // persons
 .avatar
     border-radius: $avatar-border-radius
@@ -100,6 +105,16 @@
                 @include h3
                 font-family: $body-font-family
 
+.block-persons--grid.block-with-long-text
+    @include in-page-without-sidebar
+        .persons
+            @include grid(4)
+            .person
+                flex-direction: column
+                gap: 0
+                .avatar
+                    width: 100%
+
 // persons: single
 .persons__page
     .persons-meta
@@ -121,3 +136,19 @@
                     &:hover
                         img
                             filter: grayscale(0)
+
+// pages
+.pages__section
+    .hero
+        hgroup.has-lead 
+            > p
+                @include h2
+
+    .block-title
+        --heading-margin-top: #{pxToRem(200)}
+        --heading-margin-bottom: #{pxToRem(100)}
+        h2
+            margin: 0 auto
+            text-align: center
+        @include media-breakpoint-up(xxl)
+            --heading-margin-bottom: #{pxToRem(200)}
