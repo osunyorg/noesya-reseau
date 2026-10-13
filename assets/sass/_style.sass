@@ -10,6 +10,8 @@
             &-title
                 @include link
                 font-family: $body-font-family
+            a::after
+                vertical-align: middle
 
     @include media-breakpoint-up(md)
         .hero
@@ -152,3 +154,12 @@
             text-align: center
         @include media-breakpoint-up(xxl)
             --heading-margin-bottom: #{pxToRem(200)}
+
+// sections
+
+// projects
+.persons__section,
+.persons_categories__term,
+.organizations__section,
+.organizations_categories__term
+    @include index-taxonomies-style

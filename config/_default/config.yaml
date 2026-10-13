@@ -3,3 +3,19 @@ _merge: deep
 
 params:
   ecosystem: reseau
+  categories:
+    single:
+      taxonomies:
+        display: true
+  persons:
+    index:
+      taxonomies:
+        display: true
+        layout: inline
+        show_name: true
+  organizations:
+    index:
+      taxonomies:
+        display: true
+        layout: inline
+        show_name: true
