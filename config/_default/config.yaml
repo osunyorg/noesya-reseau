@@ -3,6 +3,9 @@ _merge: deep
 
 params:
   ecosystem: reseau
+  components:
+    lightbox:
+      disabled: true
   categories:
     single:
       taxonomies:
@@ -22,13 +25,20 @@ params:
   image_sizes:
     blocks:
     sections:
+      home:
+        hero:
+          mobile:   106
+          tablet:   326
+          desktop:  326
       persons:
         hero_single:
           desktop:  643
         item:
+          mobile: 69
           tablet: 230
           desktop:  370
         layouts:
           grid:
+            mobile: 69
             tablet: 230
             desktop: 370
