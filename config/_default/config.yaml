@@ -20,8 +20,15 @@ params:
         layout: inline
         show_name: false
   image_sizes:
+    blocks:
     sections:
       persons:
+        hero_single:
+          desktop:  643
         item:
           tablet: 230
           desktop:  370
+        layouts:
+          grid:
+            tablet: 230
+            desktop: 370

@@ -123,17 +123,6 @@
 
 // persons: single
 .persons__page
-    &.full-width
-        .persons-meta
-            li
-                .taxonomy-title
-                    @include body-text
-                .taxonomy-children
-                    li
-                        @include body-text
-            > li
-                @include body-text
-
     @include media-breakpoint-up(desktop)
         .hero--with-image 
             .content
@@ -166,7 +155,18 @@
         @include media-breakpoint-up(xxl)
             --heading-margin-bottom: #{pxToRem(200)}
 
-// sections
+// single
+
+.single-meta
+    @include in-page-without-sidebar
+        li
+            .taxonomy-title
+                @include body-text
+            .taxonomy-children
+                li
+                    @include body-text
+        > li
+            @include body-text
 
 // projects
 .persons__section,
