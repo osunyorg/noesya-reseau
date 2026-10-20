@@ -12,10 +12,16 @@ params:
       taxonomies:
         display: true
         layout: inline
-        show_name: true
+        show_name: false
   organizations:
     index:
       taxonomies:
         display: true
         layout: inline
-        show_name: true
+        show_name: false
+  image_sizes:
+    sections:
+      persons:
+        item:
+          tablet: 230
+          desktop:  370

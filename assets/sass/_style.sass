@@ -107,6 +107,11 @@
                 @include h3
                 font-family: $body-font-family
 
+    @include in-page-without-sidebar
+        @include grid(4, xxl)
+        .person
+            text-align: left
+
 .block-persons--grid.block-with-long-text
     @include in-page-without-sidebar
         .persons
@@ -119,9 +124,16 @@
 
 // persons: single
 .persons__page
-    .persons-meta
-        li
-            font-family: $heading-font-family
+    &.full-width
+        .persons-meta
+            li
+                .taxonomy-title
+                    @include body-text
+                .taxonomy-children
+                    li
+                        @include body-text
+            > li
+                @include body-text
 
     @include media-breakpoint-up(desktop)
         .hero--with-image 
