@@ -10,7 +10,7 @@ osuny:
 ## PARAMS
 params:
   _merge: deep
-  plausible: "noesya.coop"
+  plausible: "reseau.noesya.coop"
 
 ## LANGUAGE
 defaultContentLanguage: fr
