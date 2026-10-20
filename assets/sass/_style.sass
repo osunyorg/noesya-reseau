@@ -74,6 +74,14 @@
         &--grid
             @include grid(4)
 
+.organizations, 
+.organizations:not(.with-summaries)
+    @include media-breakpoint-down(md)
+        .organization
+            .organization-title
+                @include h3
+                font-family: $body-font-family
+
 // persons
 .avatar
     border-radius: $avatar-border-radius
