@@ -12,6 +12,11 @@
                 font-family: $body-font-family
             a::after
                 vertical-align: middle
+            
+        &.block-class-count
+            .page
+                &-title
+                    text-transform: lowercase
 
     @include media-breakpoint-up(md)
         .hero
@@ -25,6 +30,14 @@
                 img
                     height: 290px
                     width: auto
+        .block-pages
+            .pages--grid
+                > li + li
+                    margin-top: $spacing-2
+                .page
+                    &-title
+                        @include h3
+                        font-family: $body-font-family
 
 // organizations
 .organizations
@@ -168,6 +181,7 @@
         h2
             margin: 0 auto
             text-align: center
+
         @include media-breakpoint-up(xxl)
             --heading-margin-bottom: #{pxToRem(200)}
 
@@ -190,3 +204,28 @@
 .organizations__section,
 .organizations_categories__term
     @include index-taxonomies-style
+    @include media-breakpoint-up(desktop)
+        .taxonomies-list
+            align-items: baseline
+            display: flex
+            gap: var(--grid-gutter)
+
+// search
+.section-taxonomies-container
+    .pf-trigger-btn
+        @include body-text
+        border: 1px solid var(--color-border)
+        border-radius: $btn-border-radius
+        color: var(--color-text-alt)
+        padding: space() $spacing-2
+        width: 100%
+        &::after
+            display: none
+
+        @include media-breakpoint-down(desktop)
+            margin-bottom: var(--grid-gutter)
+
+        @include media-breakpoint-up(desktop)
+            @include h4
+            font-family: $body-font-family
+            width: columns(4)

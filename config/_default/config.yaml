@@ -3,6 +3,9 @@ _merge: deep
 
 params:
   ecosystem: reseau
+  search:
+    active: true
+    positions: none
   components:
     lightbox:
       disabled: true
@@ -16,12 +19,16 @@ params:
         display: true
         layout: inline
         show_name: false
+      search:
+        active: true
   organizations:
     index:
       taxonomies:
         display: true
         layout: inline
         show_name: false
+      search:
+        active: true
   image_sizes:
     blocks:
     sections:
