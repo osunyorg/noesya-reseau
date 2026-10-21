@@ -33,7 +33,7 @@
         .block-pages
             .pages--grid
                 > li + li
-                    margin-top: $spacing-2
+                    margin-top: $spacing-3
                 .page
                     &-title
                         @include h3
@@ -123,6 +123,9 @@
         &--grid
             row-gap: $spacing-3
         article.person
+            .avatar
+                order: -1
+                width: columns(4)
             .person-name
                 @include h3
                 font-family: $body-font-family
