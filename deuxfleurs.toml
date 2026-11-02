@@ -19,6 +19,10 @@ from = "/equipe/equipe-editoriale/index.html"
 to = "/personnes/equipe-editoriale/"
 
 [[redirects]]
+from = "/personnes/ophelie-burgstahler-1/index.html"
+to = "/personnes/ophelie-burgstahler/"
+
+[[redirects]]
 from = "/equipe/esteban-almiron/index.html"
 to = "/personnes/esteban-almiron/"
 
